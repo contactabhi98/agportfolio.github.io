@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+
+  <div class="body-container">
+    <button class="show-aside-button" onclick="toggleAside()">
+      <i class="fa-solid fa-arrow-right" id="toggleIcon"></i> </button>
+    <aside class="aside-container" id="asideContainer">
+      <div class="profile-img-container-and-bio">
+        <img class="profile-img" src="../../Desktop/portfolio/assets/profile_img.JPEG" alt="abhishek_img"
+          title="Abhishek image">
+        <h1 class="my-name">Abhishek Goswami</h1>
+        <p class="bio-outer"><a href="https://simple.wikipedia.org/wiki/Software_developer"
+            class="my-current-position">Software Developer,</a> <span>INDIA</span></p>
+      </div>
+      <nav class="leftside-menu-items-nav">
+        <div class="leftside-menu-container">
+          <ul class="list-main">
+            <li class="list-items"><a href=""><span>Home</span></a></li>
+            <li class="list-items"><a href=""><span>About</span></a></li>
+            <li class="list-items"><a href=""><span>Services</span></a></li>
+            <li class="list-items"><a href=""><span>Skills</span></a></li>
+            <li class="list-items"><a href=""><span>Experience</span></a></li>
+            <li class="list-items"><a href=""><span>Work</span></a></li>
+            <li class="list-items"><a href=""><span>Education</span></a></li>
+            <li class="list-items"><a href=""><span>Blog</span></a></li>
+            <li class="list-items"><a href=""><span>Contact</span></a></li>
+          </ul>
+        </div>
+      </nav>
+      <div>
+      </div>
+    </aside>
+    <section class="section-container" onscroll="handleScroll(event)">
+      <div class="">
+        <div class="slider-text-outer">
+          <div class="slider-text-inner">
+            <div class="slider-text">
+              <span class="my-itro-one">
+                Hi!
+                <br>
+                I'm Abhishek Goswami
+              </span>
+              <span class="my-itro-two">
+                I am
+                <br>
+                Software Developer
+              </span>
+            </div>
+            <p class="intro-para">
+              To work with an organization having a good work culture, open environment for learning and
+              utilizing my skills for the growth of the organization, nation and myself.
+            </p>
+            <span class="downloand-and-hire-button">
+              <span class="download-button-span">
+                <button class="download-btn" onclick="downloadCV()">Download CV <i
+                    class="fa-solid fa-cloud-arrow-down"></i>
+                </button>
+              </span>
+              <span class="download-button-span">
+                <button class="download-btn" onclick="hireMe()">
+                  Hire Me
+                </button>
+              </span>
+            </span>
+          </div>
+        </div>
+        <div class="about-us-container">
+          <div class="aboutus-inner">
+            <div>
+              <span class="heading-meta">About Me</span>
+              <span class="colorlib-heading">Who Am I?</span>
+              <span class="about-intro">
+                <p>
+                  <strong>Hi! I'm Abhishek, </strong>as a professional web developer, I firmly believe that JavaScript
+                  is the backbone of web development.
+                  With
+                  my expertise in planning, developing, testing, and deploying web applications, I always keep the
+                  end-user
+                  experience at the forefront of my mind.
+                </p>
+                <p>
+                  Currently, I am a front-end developer at Tudip Technology Pvt. Ltd., where I apply my skills to create
+                  effective and efficient web applications.
+                </p>
+                <p>
+                  I am always eager to connect with people from diverse backgrounds, so please don't hesitate to reach
+                  out
+                  if you'd like to discuss a project or just connect.
+                </p>
+            </div>
+            <div>
+              <div class="aboout-cards-main">
+                <div class="about-cards">
+                  <div class="cards graphic-card">
+                    <i class="fa-solid fa-lightbulb graphic"></i>
+                    <span>Graphic Design</span>
+                  </div>
+                </div>
+                <div class="about-cards">
+                  <div class="cards web-card">
+                    <i class="fa-solid fa-computer web"></i>
+                    <span>Web Design</span>
+                  </div>
+                </div>
+                <div class="about-cards">
+                  <div class="cards software-card">
+                    <i class="fa-solid fa-database software"></i>
+                    <span>Software</span>
+                  </div>
+                </div>
+                <div class="about-cards">
+                  <div class="cards application-card">
+                    <i class="fa-solid fa-mobile application"></i>
+                    <span>Application</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </span>
+          </div>
+        </div>
+        <div class="about-us-container">
+          <div class="aboutus-inner">
+            <div>
+              <span class="heading-meta">WHAT I DO?</span>
+              <span class="colorlib-heading">HERE ARE SOME OF MY EXPERTISE</span>
+            </div>
+            <div>
+              <div class="expertise-card-main">
+                <div class="expertise-cards">
+                  <div class="expertise">
+                    <span class="rhombus">
+                      <i class="fa-solid fa-lightbulb graphic innovative-ideas"></i>
+                    </span>
+                    <span class="expertise-innner">
+                      <span class="expertise-heading">
+                        INNOVATIVE IDEAS
+                      </span>
+                      <p class="expertise-details">
+                        Creative thinker skilled at generating unconventional solutions and adapting to changing
+                        environments to drive innovation and achieve strategic objectives.</p>
+                    </span>
+                  </div>
+                </div>
+                <div class="expertise-cards">
+                  <div class="expertise expertise-teamcollab">
+                    <span class="rhombus teamcollaboration-rohmbus">
+                      <i class="fa-brands fa-teamspeak graphic teamcollaboration"></i>
+                    </span>
+                    <span class="expertise-innner">
+                      <span class="expertise-heading">
+                        Team Collaboration
+                      </span>
+                      <p class="expertise-details">
+                        Skilled in adeptly fostering effective teamwork and collaboration, expertly leveraging diverse
+                        perspectives to achieve common objectives efficiently.</p>
+                    </span>
+                  </div>
+                </div>
+                <div class="expertise-cards">
+                  <div class="expertise expertise-time">
+                    <span class="rhombus rhombus-time">
+                      <i class="fa-solid fa-clock graphic time-management"></i>
+                    </span>
+                    <span class="expertise-innner">
+                      <span class="expertise-heading">
+                        Time Management
+                      </span>
+                      <p class="expertise-details">
+                        Proficient in proficiently prioritizing tasks, meeting deadlines, and optimizing productivity
+                        through effective time management techniques.</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-us-container">
+          <div class="aboutus-inner">
+            <div>
+              <span class="heading-meta">MY SPECIALTY</span>
+              <span class="colorlib-heading">MY SKILLS</span>
+            </div>
+            <div>
+              <div class="progress-bar-main">
+                <div class="progress-bar">
+                  <div class="skill" style="width:80%">
+                    <span>Angular</span>
+                    <span style="margin-left: auto">80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="bar bar-angular" style="width:80%">
+                      <p class="percent"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress-bar">
+                  <div class="skill" style="width:95%">
+                    <span>HTML</span>
+                    <span style="margin-left: auto">95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="bar bar-html" style="width:95%">
+                      <p class="percent"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-bar-main">
+                <div class="progress-bar">
+                  <div class="skill" style="width:90%">
+                    <span>CSS</span>
+                    <span style="margin-left: auto">90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="bar bar-css" style="width:90%">
+                      <p class="percent"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress-bar">
+                  <div class="skill" style="width:80%">
+                    <span>JavaScript</span>
+                    <span style="margin-left: auto">80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="bar bar-javascript" style="width:80%">
+                      <p class="percent"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-bar-main">
+                <div class="progress-bar">
+                  <div class="skill" style="width:80%">
+                    <span>TypeScript</span>
+                    <span style="margin-left: auto">80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="bar bar-typescript" style="width:80%">
+                      <p class="percent"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress-bar">
+                  <div class="skill" style="width:70%">
+                    <span>JQuerry</span>
+                    <span style="margin-left: auto">70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="bar bar-jquery" style="width:70%">
+                      <p class="percent"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-us-container">
+        <div class="aboutus-inner">
+          <div>
+            <span class="heading-meta">Education</span>
+            <span class="colorlib-heading">EDUCATION
+            </span>
+          </div>
+          <div>
+            <div class="education-main">
+              <div class="education-inner">
+                <div class="education-title">
+                  <span><i class="fa-solid fa-graduation-cap"></i></span> Bachelor of Technology (Computer Science & Engineering) - 2021
+                </div>
+                <div class="education-details">
+                  <div class="organisation-name">
+                    <div>
+                      Rajiv Gandhi Proudyogiki Vishwavidyalaya
+                    </div>
+                    <div>
+                      Jai Narain College of Technology (JNCT), Bhopal
+                    </div>
+                  </div>
+                  <div class="education-percentage-or-year">
+                    <div>
+                      81.8%
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="education-inner">
+                <div class="education-title">
+                  <span><i class="fa-solid fa-building-columns"></i></span> Senior Secondary - 2017
+                </div>
+                <div class="education-details">
+                  <div class="organisation-name">
+                    <div>
+                      Bihar School Examination Board
+                    </div>
+                    <div>
+                      M.L.S.M. College, Darbhanga
+                    </div>
+                  </div>
+                  <div class="education-percentage-or-year">
+                    <div>
+                      67.2%
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="education-inner">
+                <div class="education-title">
+                  <span><i class="fa-solid fa-school"></i></span> High School - 2015
+                </div>
+                <div class="education-details">
+                  <div class="organisation-name">
+                    <div>
+                      Central Board of Secondary Education
+                    </div>
+                    <div>
+                      Jesus & Mary Academy, Darbhanga
+                    </div>
+                  </div>
+                  <div class="education-percentage-or-year">
+                    <div>
+                      89.3%
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-us-container">
+        <div class="aboutus-inner">
+          <div>
+            <span class="heading-meta">EXPERIENCE</span>
+            <span class="colorlib-heading">WORK EXPERIENCE
+            </span>
+          </div>
+          <div class="experience-main">
+            <div class="timeline">
+              <div class="outer">
+                <div class="card">
+                  <div class="info">
+                    <div class="title">
+                      Software Developer
+                    </div>
+                    <div class="exp-desc">
+                      <p>Tudip Technology Pvt. Ltd.</p>
+                      <p class="time-and-place">
+                        <span class="left">10/2022 - Present</span>
+                        <span class="right">Pune</span>
+                      </p>
+                    </div>
+                    <div class="exp-details">
+                      <ul>
+                        <li>
+                          Proficient in WebSocket technology, facilitating real-time, two-way communication between
+                          client and server applications.
+                        </li>
+                        <li>
+                          Adept in utilizing a variety of development tools to streamline the web development process,
+                          enhancing efficiency and productivity.</li>
+                        <li>
+                          Well-versed in web development and application programming interfaces (APIs), with expertise
+                          in both REST APIs for building robust and scalable web applications.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="info">
+                    <div class="title">
+                      Associate Software Developer
+                    </div>
+                    <div class="exp-desc">
+                      <p>Tudip Technology Pvt. Ltd.</p>
+                      <p class="time-and-place">
+                        <span class="left">09/2021 - 09/2022</span>
+                        <span class="right">Pune</span>
+                      </p>
+                    </div>
+                    <div class="exp-details">
+                      <div>
+                        <ul>
+                          <li>
+                            Proficient in Angular, Angular CLI, and Angular Material for developing dynamic web
+                            applications.
+                          </li>
+                          <li>
+                            Skilled in JavaScript libraries, AJAX, and JSON for handling asynchronous requests and
+                            data manipulation.</li>
+                          <li>
+                            Experienced in front-end technologies including JavaScript, HTML, HTML5, and Cascading
+                            Style Sheets (CSS), with expertise in Bootstrap framework for responsive web design.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-us-container">
+        <div class="aboutus-inner">
+          <div>
+            <span class="heading-meta">GET IN TOUCH</span>
+            <span class="colorlib-heading">CONTACT</span>
+          </div>
+        </div>
+        <div class="contact-main">
+          <!-- <div class="contact-inner">
+            <div class="contact-details">
+              <div class="email contact-details-icon-div"><span class="contacts-icon-container"><i class="fa-solid fa-envelope contact-icons"></i></span> <span>contactabhi98@gmail.com</span></div>
+              <div class="address contact-details-icon-div"><span class="contacts-icon-container"><i class="fa-solid fa-map contact-icons"></i></span> <span>403,B-Wing, Green Life, Hinjewadi, Pune (MH)</span></div>
+              <div class="call contact-details-icon-div"><span class="contacts-icon-container"><i class="fa-solid fa-phone contact-icons"></i></span> <span>+91 6200734304</span></div>
+            </div>
+            <div class="contact-form"></div>
+          </div> -->
+
+
+          <div class="contact-inner">
+            <div class="contact-details">
+                <div class="email contact-details-icon-div">
+                    <span class="contacts-icon-container"><i class="fa-solid fa-envelope contact-icons"></i></span>
+                    <span class="contact-text"><a href=`mailto:"contactabhi98@gmail.com"` class="my-current-position" target="_blank">contactabhi98@gmail.com</a></span>
+                  </div>
+                <div class="linkedIn contact-details-icon-div">
+                  <span class="contacts-icon-container"><i class="fa-brands fa-linkedin contact-icons"><a href="https://www.linkedin.com/in/contactabhi98/"></a></i></span>
+                  <span class="contact-text"><a class="my-current-position" href="https://www.linkedin.com/in/contactabhi98/" target="_blank">contactabhi98</a></span>
+              </div>
+                <div class="address contact-details-icon-div">
+                    <span class="contacts-icon-container"><i class="fa-solid fa-map contact-icons"></i></span>
+                    <span class="contact-text">403, B-Wing, Green Life, Hinjewadi, Pune (MH)</span>
+                </div>
+                <div class="call contact-details-icon-div">
+                    <span class="contacts-icon-container"><i class="fa-solid fa-phone contact-icons"></i></span>
+                    <span class="contact-text">+91 6200734304</span>
+                </div>
+            </div>
+            <div class="contact-form">
+              <form action="mailto:contactabhi98@gmail.com" method="post" enctype="text/plain">
+                <div class="input-name"><input type="text" name="Name" placeholder="Name"></div>
+                <div class="input-name"><input type="email" name="Email" placeholder="E-mail"></div>
+                <div class="input-name"><input type="text" name="Subject" placeholder="Subject"></div>
+                <div class="input-name"><textarea name="Message" placeholder="Message"></textarea></div>
+                <div class="input-name"><button type="submit" class="send-msg">Send Message</button></div>
+            </form>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

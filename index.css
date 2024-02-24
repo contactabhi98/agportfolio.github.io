@@ -1,0 +1,695 @@
+html,
+body {
+	margin: 0 10px;
+	font-family: "Quicksand", Arial, sans-serif;
+	color: rgba(0, 0, 0, 0.7);
+	overflow-y: hidden;
+}
+
+:root {
+	--primary-color: #fff;
+	/* try #212121 also for dark mode */
+	--background-color: #212121;
+	--font: sans-serif;
+}
+
+.body-container {
+	display: flex;
+	width: 100%;
+}
+
+.show-aside-button {
+	display: none;
+	/* Initially hide the show button */
+	cursor: pointer;
+}
+
+.aside-container {
+	position: sticky;
+	width: 20%;
+	min-width: 200px;
+	/* Set a minimum width for the aside container */
+	flex-shrink: 0;
+	/* Prevent the aside container from shrinking */
+	margin: 0 auto;
+	/* height: 134em; */
+	max-width: 20%;
+	background-color: #f2f3f7;
+}
+
+.section-container {
+	width: 100%;
+}
+
+.profile-img-container-and-bio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 3em;
+}
+
+.profile-img {
+	width: 150px;
+	height: 150px;
+	border: 1px solid #f2f3f7;
+	border-radius: 50%;
+	filter: grayscale(50%) contrast(60%) brightness(100%);
+}
+
+.my-name {
+	font-weight: 700;
+	font-size: 22px;
+	font-family: "Playfair Display", Georgia, serif;
+	margin-bottom: 5px;
+}
+
+.bio-outer {
+	text-transform: uppercase;
+	margin-top: 2px;
+	font-size: 12px;
+}
+
+.my-current-position {
+	color: #337ab7;
+	text-decoration: none;
+}
+
+.leftside-menu-items-nav {}
+
+.leftside-menu-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+.list-main {
+	margin: 0 0 2em 0;
+	list-style: none;
+	/* Remove bullets */
+	padding: 0;
+	/* Remove any default padding */
+}
+
+.list-items {
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+
+}
+
+.list-items a {
+	text-decoration: none;
+	padding: 10px 0;
+	font-family: "Quicksand", Arial, sans-serif;
+	color: inherit;
+	/* Use the color inherited from the parent element */
+	text-decoration: none;
+	/* Remove underline */
+}
+
+.list-items a span:hover {
+	border-bottom: 1px solid #337ab7;
+}
+
+.list-items a span:focus {
+	color: #337ab7;
+}
+
+.section-container:hover {
+	height: 600px;
+	/* Set the desired height for the section */
+	overflow-y: auto;
+	/* Enable vertical scrolling */
+}
+
+.section-container .scrolling {
+	overflow-y: auto;
+}
+
+.section-container::-webkit-scrollbar {
+	width: 5px;
+	/* Set the width of the scrollbar */
+}
+
+.section-container::-webkit-scrollbar-thumb {
+	background-color: #888;
+	/* Set the color of the scrollbar thumb */
+	border-radius: 10px;
+	/* Set the border radius of the scrollbar thumb */
+}
+
+.slider-text-inner {
+	background-image: url("../../Desktop/my_portfolio/assets/wallpaper2.JPEG");
+	height: 600px;
+}
+
+.slider-text {
+	padding: 250px 0px 10px 40px;
+	line-height: 1.3;
+	font-weight: 700;
+	font-size: 60px;
+	font-family: "Playfair Display", Georgia, serif;
+}
+
+.my-itro-two {
+	display: none;
+}
+
+.my-itro-one .my-itro-two {
+	color: black;
+}
+
+.slider-text-inner::before {
+	background-color: rgba(128, 128, 128, 0.3);
+	/* Semi-transparent gray overlay */
+}
+
+.intro-para {
+	padding: 0px 0px 0px 40px;
+	margin-top: 0px;
+	color: black;
+}
+
+.download-button-span {
+	margin-right: 10px;
+}
+
+.downloand-and-hire-button {
+	padding: 0px 0px 0px 40px;
+}
+
+.download-btn {
+	background-color: transparent;
+	border: 1px solid black;
+	font-size: 15px;
+	padding: 8px;
+	cursor: pointer;
+	color: black;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.download-btn:hover {
+	background-color: white;
+}
+
+
+.heading-meta {
+	margin-top: 30px;
+	padding: 0px 0px 0px 40px;
+	display: block;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #999999;
+	font-weight: 500;
+	letter-spacing: 5px;
+
+}
+
+.colorlib-heading {
+	display: block;
+	margin-top: 20px;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	line-height: 1.8;
+	position: relative;
+	color: #000;
+	font-family: "Playfair Display", Georgia, serif;
+	padding: 0px 0px 0px 40px;
+}
+
+.about-intro {
+	padding: 0px 0px 0px 40px;
+	margin-top: 10px;
+	display: block;
+	line-height: 1.5;
+}
+
+.about-intro p {
+	margin-bottom: 5px;
+}
+
+.aboout-cards-main {
+	padding: 0px 0px 0px 40px;
+	display: flex;
+	margin-top: 20px;
+}
+
+.about-cards {
+	width: 25%;
+	/* border: 2px solid green; */
+}
+
+.cards {
+	width: 70%;
+	border: 1px solid white;
+	margin-right: 20px;
+	padding: 15px;
+	box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.7);
+	/* Grayish glow effect */
+}
+
+.cards:hover {
+	cursor: pointer;
+	transform: translate(5px, 10px);
+	transform: scale(1.1) translateZ(20px);
+	/* Outward translation with zoom (optional) */
+
+}
+
+.cards span {
+	display: block;
+	margin: 20px 0px 20px 0px
+}
+
+.graphic-card {
+	border-bottom: 2px solid #2c98f0;
+}
+
+.graphic {
+	color: #2c98f0;
+	font-size: 30px;
+}
+
+.web-card {
+	border-bottom: 2px solid #ec5453;
+}
+
+.web {
+	color: #ec5453;
+	font-size: 30px;
+}
+
+.software-card {
+	border-bottom: 2px solid #f9bf3f;
+}
+
+.software {
+	color: #f9bf3f;
+	font-size: 30px;
+}
+
+.application-card {
+	border-bottom: 2px solid #a84cb8;
+}
+
+.application {
+	color: #a84cb8;
+	font-size: 30px;
+}
+
+.expertise-card-main {
+	padding: 0px 0px 0px 40px;
+	display: flex;
+}
+
+.expertise-cards {
+	width: 33.3%;
+	position: relative;
+	margin-top: 4rem;
+	margin-right: 20px;
+}
+
+.expertise {
+	border: 1px solid white;
+	box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.7);
+	border-bottom: 2px solid #2c98f0;
+}
+
+.expertise-teamcollab {
+	border-bottom: 2px solid #ec5453;
+}
+
+.expertise-time {
+	border-bottom: 2px solid #f9bf3f;
+}
+
+.rhombus {
+	position: absolute;
+	/* Position the hexagon absolutely */
+	left: 50%;
+	/* Move the hexagon horizontally to the center */
+	transform: translate(-50%, -50%);
+	/* Center the hexagon */
+	width: 100px;
+	/* Adjust the width as needed */
+	height: 100px;
+	/* Adjust the height as needed */
+	background-color: #2c98f0;
+	/* Adjust the background color as needed */
+	clip-path: polygon(50% 0%,
+			100% 25%,
+			100% 75%,
+			50% 100%,
+			0% 75%,
+			0% 25%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.teamcollaboration-rohmbus {
+	background-color: #ec5453;
+}
+
+.rhombus-time {
+	background-color: #f9bf3f;
+}
+
+.innovative-ideas {
+	color: white;
+}
+
+.teamcollaboration {
+	color: white;
+}
+
+.time-management {
+	color: white;
+}
+
+.time-management .expertise-inner {}
+
+.expertise-heading {
+	display: block;
+	margin-top: 4rem;
+	text-align: center;
+	font-weight: bold;
+	padding: 15px;
+	text-transform: uppercase;
+}
+
+
+.expertise-details {
+	font-weight: 400;
+	display: block;
+	padding: 15px;
+	text-align: center;
+	list-style: 1.5;
+}
+
+.progress-bar-main {
+	display: flex;
+}
+
+.progress-bar {
+	width: 50%;
+	padding: 0px 0px 0px 40px;
+	margin-top: 1rem;
+	margin-right: 20px;
+}
+
+.skill {
+	display: flex;
+}
+
+.progress {
+	/* margin: 20px auto; */
+	padding: 0;
+	width: 100%;
+	height: 5px;
+	overflow: hidden;
+	background: #e5e5e5;
+	border-radius: 6px;
+}
+
+.bar {
+	position: relative;
+	float: left;
+	min-width: 1%;
+	height: 100%;
+}
+
+.bar-angular {
+	background: #2c98f0;
+}
+
+.bar-html {
+	background: #ec5453
+}
+
+.bar-css {
+	background: #f9bf3f
+}
+
+.bar-javascript {
+	background: #a84cb8
+}
+
+.bar-typescript {
+	background: #2fa499;
+}
+
+.bar-jquery {
+	background: #4054b2;
+}
+
+.percent {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	font-size: 12px;
+	color: white;
+}
+
+.value {
+	width: 2px;
+	background: #4054b2;
+}
+
+.education-main {
+	padding: 0px 0px 0px 40px;
+	margin-top: 1.2rem;
+}
+
+.education-inner {
+	margin-bottom: 2rem;
+	width: 98%;
+	box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.7);
+}
+
+.education-details {
+	display: flex;
+	padding: 10px;
+
+}
+
+.education-title {
+	/* border-bottom: 1px solid black;	 */
+	padding: 10px;
+	text-transform: uppercase;
+	background-color: #2c98f0;
+	color: white;
+	font-weight: 500;
+}
+
+.organisation-name {
+	width: 70%;
+	line-height: 1.5;
+}
+
+.education-percentage-or-year {
+	width: 30%;
+	display: flex;
+	justify-content: right;
+}
+
+
+.experience-main {
+	padding: 0px 0px 0px 40px;
+	margin-top: 1.2rem;
+}
+
+/* Timeline Container */
+.timeline {
+	background: var(--primary-color);
+	margin: 20px auto;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+	border-left: 2px solid #333;
+}
+
+/* Card container */
+.card {
+	position: relative;
+	margin: 0 0 20px 20px;
+	padding: 10px;
+	box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.7);
+	border-radius: 8px;
+	max-width: 500px;
+}
+
+/* Information about the timeline */
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+/* Title of the card */
+.title {
+	font-weight: bold;
+	position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: white;
+	border-radius: 999px;
+	left: -39px;
+	border: 3px solid orangered;
+}
+
+.exp-desc p {
+	margin: 0px;
+}
+
+.time-and-place {
+	display: flex;
+	justify-content: space-between;
+	font-style: italic;
+	padding-top: 5px;
+	margin: 0px;
+}
+
+.left {
+	order: 1;
+	/* margin-bottom: 0px; */
+	/* This will ensure the left span appears first visually */
+}
+
+.right {
+	/* margin-top: 0px; */
+	order: 2;
+	/* This will ensure the right span appears second visually */
+}
+
+.exp-details {
+	font-size: 14px;
+	font-style: italic;
+}
+
+.contact-main {
+	padding: 0px 0px 0px 40px;
+	margin-top: 1.2rem;
+}
+
+.contact-inner {
+    display: flex;
+}
+
+.contact-details {
+    width: 50%;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.contact-details-icon-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust this value to add space between each contact detail */
+}
+
+.contacts-icon-container {
+    background: #f2f3f7;
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Added to vertically center the icon */
+    width: 40px; /* Adjusted width for better spacing */
+    height: 40px; /* Added height for better spacing */
+    border-radius: 2%; /* Added to make the container circular */
+    margin-right: 10px; /* Adjusted margin for space between icon and text */
+}
+
+.contact-text {
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+
+.contact-icons {
+	font-size: 25px;
+	color: #2c98f0;
+}
+        
+.contact-details-icon-div {
+	margin-bottom: 4rem;
+}
+
+.input-name {
+	margin-bottom: 2rem;
+}
+
+.input-name  input,textarea {
+	width: 80%;
+	background: #f2f3f7;
+	border: none;
+	border-radius: 2px;
+	height: 30px;
+	padding: 10px;
+}
+
+.input-name textarea {
+	height: 120px;
+}
+
+.sendMessageBtn {
+	width: 20%;
+	height: 20%;
+} 
+
+.send-msg {
+	background: #2c98f0;
+	color: white;
+	border: none;
+	border-radius: 2px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+	.aside-container {
+		display: none;
+		/* Hide the aside container for small devices */
+	}
+
+	.show-aside-button {
+		display: block;
+		height: 25px;
+		width: 20px;
+		position: absolute;
+		top: 10px;
+		left: 20px;
+		z-index: 999;
+		background-color: transparent;
+		border: none;
+	}
+
+	#toggleIcon {
+		border: 1px solid black;
+		padding: 5px;
+		border-radius: 50%;
+	}
+
+}
