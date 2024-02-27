@@ -146,7 +146,7 @@ body {
 }
 
 .slider-text-inner {
-	background-image: url("../../Desktop/my_portfolio/assets/wallpaper2.JPEG");
+	background-image: url("./assets/wallpaper2.JPEG");
 	height: 600px;
 }
 
@@ -672,6 +672,47 @@ body {
 	.aside-container {
 		display: none;
 		/* Hide the aside container for small devices */
+	}
+
+	.section-container {
+		width: revert;
+	}
+
+	.slider-text {
+		font-size: 20px;
+	}
+
+	.intro-para {
+		padding: 0px 10px 0px 40px;
+	}
+
+	.aboout-cards-main {
+		flex-direction: column;
+	}
+
+	.about-cards  {
+		width: 80%;
+		margin-bottom: 1rem;
+	}
+
+	.cards {
+		width: 100%;
+	}
+
+	.expertise-card-main {
+		flex-direction: column;
+	}
+
+	.expertise-cards {
+		width: 90%;
+	}
+
+	.progress-bar-main {
+		flex-direction: column;
+	}
+
+	.progress-bar {
+		width: 80%;
 	}
 
 	.show-aside-button {
