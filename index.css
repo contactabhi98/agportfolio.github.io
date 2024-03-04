@@ -737,4 +737,17 @@ body {
 		border-radius: 50%;
 	}
 
+	.card {
+		width: 230px;
+	}
+
+	.contact-inner {
+		flex-direction: column;
+	}
+
+	.contact-details, .contact-form {
+		width: 100%;
+	}
+
+
 }
