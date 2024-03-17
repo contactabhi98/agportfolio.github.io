@@ -18,8 +18,7 @@
       <i class="fa-solid fa-arrow-right" id="toggleIcon"></i> </button>
     <aside class="aside-container" id="asideContainer">
       <div class="profile-img-container-and-bio">
-        <img class="profile-img" src="./assets/profile_img.JPEG" alt="abhishek_img"
-          title="Abhishek image">
+        <img class="profile-img" src="./assets/profile_img.JPEG" alt="abhishek_img" title="Abhishek image">
         <h1 class="my-name">Abhishek Goswami</h1>
         <p class="bio-outer"><a href="https://simple.wikipedia.org/wiki/Software_developer"
             class="my-current-position">Software Developer,</a> <span>INDIA</span></p>
@@ -27,23 +26,23 @@
       <nav class="leftside-menu-items-nav">
         <div class="leftside-menu-container">
           <ul class="list-main">
-            <li class="list-items"><a href=""><span>Home</span></a></li>
-            <li class="list-items"><a href=""><span>About</span></a></li>
-            <li class="list-items"><a href=""><span>Services</span></a></li>
-            <li class="list-items"><a href=""><span>Skills</span></a></li>
-            <li class="list-items"><a href=""><span>Experience</span></a></li>
-            <li class="list-items"><a href=""><span>Work</span></a></li>
-            <li class="list-items"><a href=""><span>Education</span></a></li>
-            <li class="list-items"><a href=""><span>Blog</span></a></li>
-            <li class="list-items"><a href=""><span>Contact</span></a></li>
+            <li class="list-items"><a href="#home"><span>Home</span></a></li>
+            <li class="list-items"><a href="#about"><span>About</span></a></li>
+            <li class="list-items"><a href="#services"><span>Services</span></a></li>
+            <li class="list-items"><a href="#skills"><span>Skills</span></a></li>
+            <li class="list-items"><a href="#work"><span>Experience</span></a></li>
+            <li class="list-items"><a href="#work"><span>Work</span></a></li>
+            <li class="list-items"><a href="#education"><span>Education</span></a></li>
+            <li class="list-items"><a href="#blog"><span>Blog</span></a></li>
+            <li class="list-items"><a href="#contact"><span>Contact</span></a></li>
           </ul>
         </div>
       </nav>
       <div>
       </div>
     </aside>
-    <section class="section-container" onscroll="handleScroll(event)">
-      <div class="">
+    <div class="section-container">
+      <section class="" id="home">
         <div class="slider-text-outer">
           <div class="slider-text-inner">
             <div class="slider-text">
@@ -76,7 +75,7 @@
             </span>
           </div>
         </div>
-        <div class="about-us-container">
+        <div class="about-us-container" id="about">
           <div class="aboutus-inner">
             <div>
               <span class="heading-meta">About Me</span>
@@ -131,7 +130,7 @@
             </span>
           </div>
         </div>
-        <div class="about-us-container">
+        <div class="about-us-container" id="services">
           <div class="aboutus-inner">
             <div>
               <span class="heading-meta">WHAT I DO?</span>
@@ -188,7 +187,7 @@
             </div>
           </div>
         </div>
-        <div class="about-us-container">
+        <div class="about-us-container" id="skills">
           <div class="aboutus-inner">
             <div>
               <span class="heading-meta">MY SPECIALTY</span>
@@ -272,85 +271,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="about-us-container">
-        <div class="aboutus-inner">
-          <div>
-            <span class="heading-meta">Education</span>
-            <span class="colorlib-heading">EDUCATION
-            </span>
-          </div>
-          <div>
-            <div class="education-main">
-              <div class="education-inner">
-                <div class="education-title">
-                  <span><i class="fa-solid fa-graduation-cap"></i></span> Bachelor of Technology (Computer Science & Engineering) - 2021
-                </div>
-                <div class="education-details">
-                  <div class="organisation-name">
-                    <div>
-                      Rajiv Gandhi Proudyogiki Vishwavidyalaya
-                    </div>
-                    <div>
-                      Jai Narain College of Technology (JNCT), Bhopal
-                    </div>
-                  </div>
-                  <div class="education-percentage-or-year">
-                    <div>
-                      81.8%
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="education-inner">
-                <div class="education-title">
-                  <span><i class="fa-solid fa-building-columns"></i></span> Senior Secondary - 2017
-                </div>
-                <div class="education-details">
-                  <div class="organisation-name">
-                    <div>
-                      Bihar School Examination Board
-                    </div>
-                    <div>
-                      M.L.S.M. College, Darbhanga
-                    </div>
-                  </div>
-                  <div class="education-percentage-or-year">
-                    <div>
-                      67.2%
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="education-inner">
-                <div class="education-title">
-                  <span><i class="fa-solid fa-school"></i></span> High School - 2015
-                </div>
-                <div class="education-details">
-                  <div class="organisation-name">
-                    <div>
-                      Central Board of Secondary Education
-                    </div>
-                    <div>
-                      Jesus & Mary Academy, Darbhanga
-                    </div>
-                  </div>
-                  <div class="education-percentage-or-year">
-                    <div>
-                      89.3%
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="about-us-container">
+      </section>
+      <section class="about-us-container" id="work">
         <div class="aboutus-inner">
           <div>
             <span class="heading-meta">EXPERIENCE</span>
@@ -423,9 +345,85 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="about-us-container" id="education">
+        <div class="aboutus-inner">
+          <div>
+            <span class="heading-meta">Education</span>
+            <span class="colorlib-heading">EDUCATION
+            </span>
+          </div>
+          <div>
+            <div class="education-main">
+              <div class="education-inner">
+                <div class="education-title">
+                  <span><i class="fa-solid fa-graduation-cap"></i></span> Bachelor of Technology (Computer Science &
+                  Engineering) - 2021
+                </div>
+                <div class="education-details">
+                  <div class="organisation-name">
+                    <div>
+                      Rajiv Gandhi Proudyogiki Vishwavidyalaya
+                    </div>
+                    <div>
+                      Jai Narain College of Technology (JNCT), Bhopal
+                    </div>
+                  </div>
+                  <div class="education-percentage-or-year">
+                    <div>
+                      81.8%
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      <div class="about-us-container">
+              <div class="education-inner">
+                <div class="education-title">
+                  <span><i class="fa-solid fa-building-columns"></i></span> Senior Secondary - 2017
+                </div>
+                <div class="education-details">
+                  <div class="organisation-name">
+                    <div>
+                      Bihar School Examination Board
+                    </div>
+                    <div>
+                      M.L.S.M. College, Darbhanga
+                    </div>
+                  </div>
+                  <div class="education-percentage-or-year">
+                    <div>
+                      67.2%
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="education-inner">
+                <div class="education-title">
+                  <span><i class="fa-solid fa-school"></i></span> High School - 2015
+                </div>
+                <div class="education-details">
+                  <div class="organisation-name">
+                    <div>
+                      Central Board of Secondary Education
+                    </div>
+                    <div>
+                      Jesus & Mary Academy, Darbhanga
+                    </div>
+                  </div>
+                  <div class="education-percentage-or-year">
+                    <div>
+                      89.3%
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-us-container" id="contact">
         <div class="aboutus-inner">
           <div>
             <span class="heading-meta">GET IN TOUCH</span>
@@ -445,22 +443,25 @@
 
           <div class="contact-inner">
             <div class="contact-details">
-                <div class="email contact-details-icon-div">
-                    <span class="contacts-icon-container"><i class="fa-solid fa-envelope contact-icons"></i></span>
-                    <span class="contact-text"><a href=`mailto:"contactabhi98@gmail.com"` class="my-current-position" target="_blank">contactabhi98@gmail.com</a></span>
-                  </div>
-                <div class="linkedIn contact-details-icon-div">
-                  <span class="contacts-icon-container"><i class="fa-brands fa-linkedin contact-icons"><a href="https://www.linkedin.com/in/contactabhi98/"></a></i></span>
-                  <span class="contact-text"><a class="my-current-position" href="https://www.linkedin.com/in/contactabhi98/" target="_blank">contactabhi98</a></span>
+              <div class="email contact-details-icon-div">
+                <span class="contacts-icon-container"><i class="fa-solid fa-envelope contact-icons"></i></span>
+                <span class="contact-text"><a href=`mailto:"contactabhi98@gmail.com"` class="my-current-position"
+                    target="_blank">contactabhi98@gmail.com</a></span>
               </div>
-                <div class="address contact-details-icon-div">
-                    <span class="contacts-icon-container"><i class="fa-solid fa-map contact-icons"></i></span>
-                    <span class="contact-text">403, B-Wing, Green Life, Hinjewadi, Pune (MH)</span>
-                </div>
-                <div class="call contact-details-icon-div">
-                    <span class="contacts-icon-container"><i class="fa-solid fa-phone contact-icons"></i></span>
-                    <span class="contact-text">+91 6200734304</span>
-                </div>
+              <div class="linkedIn contact-details-icon-div">
+                <span class="contacts-icon-container"><i class="fa-brands fa-linkedin contact-icons"><a
+                      href="https://www.linkedin.com/in/contactabhi98/"></a></i></span>
+                <span class="contact-text"><a class="my-current-position"
+                    href="https://www.linkedin.com/in/contactabhi98/" target="_blank">contactabhi98</a></span>
+              </div>
+              <div class="address contact-details-icon-div">
+                <span class="contacts-icon-container"><i class="fa-solid fa-map contact-icons"></i></span>
+                <span class="contact-text">403, B-Wing, Green Life, Hinjewadi, Pune (MH)</span>
+              </div>
+              <div class="call contact-details-icon-div">
+                <span class="contacts-icon-container"><i class="fa-solid fa-phone contact-icons"></i></span>
+                <span class="contact-text">+91 6200734304</span>
+              </div>
             </div>
             <div class="contact-form">
               <form action="mailto:contactabhi98@gmail.com" method="post" enctype="text/plain">
@@ -469,12 +470,12 @@
                 <div class="input-name"><input type="text" name="Subject" placeholder="Subject"></div>
                 <div class="input-name"><textarea name="Message" placeholder="Message"></textarea></div>
                 <div class="input-name"><button type="submit" class="send-msg">Send Message</button></div>
-            </form>
+              </form>
             </div>
+          </div>
         </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
 </body>
 

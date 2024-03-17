@@ -47,10 +47,8 @@ window.onload = function() {
     link.click();
   }
 
-  // function handleScroll(event) {
-  //   console.log(event)
-  //   // Add scrolling class to the section container when the user starts scrolling
-  //   event.target.classList.add('scrolling');
-  // }
-  
-  
+  function handleScroll(event) {
+    console.log(event)
+    // Add scrolling class to the section container when the user starts scrolling
+    event.target.classList.add('scrolling');
+  }

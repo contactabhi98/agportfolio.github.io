@@ -39,6 +39,9 @@ body {
 
 .section-container {
 	width: 100%;
+	height: 100vh;
+	/* Set the desired height for the section */
+	overflow-y: auto;
 }
 
 .profile-img-container-and-bio {
@@ -123,9 +126,9 @@ body {
 }
 
 .section-container:hover {
-	height: 100vh;
+	/* height: 100vh; */
 	/* Set the desired height for the section */
-	overflow-y: auto;
+	/* overflow-y: auto; */
 	/* Enable vertical scrolling */
 }
 
