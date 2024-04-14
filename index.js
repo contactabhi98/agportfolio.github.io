@@ -34,14 +34,14 @@ window.onload = function() {
 
   function downloadCV() {
     // Replace 'path/to/your/cv.pdf' with the actual path to your CV file
-    var cvURL = '/home/lt-399/Desktop/my_portfolio/assets/Abhishek_Resume.pdf';
+    var cvURL = './assets/Abhishek_Resume.pdf';
     
     // Create a temporary link element
     var link = document.createElement('a');
     link.href = cvURL;
     link.target = '_blank';
     // Set the download attribute with the desired file name
-    link.download = '/home/lt-399/Desktop/my_portfolio/assets/Abhishek_Resume.pdf'; // Change 'Your_CV.pdf' to the desired file name
+    link.download = './assets/Abhishek_Resume.pdf'; // Change 'Your_CV.pdf' to the desired file name
     
     // Programmatically trigger the click event to start the download
     link.click();

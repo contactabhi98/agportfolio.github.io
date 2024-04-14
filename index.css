@@ -201,6 +201,7 @@ body {
 	color: black;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .download-btn:hover {
